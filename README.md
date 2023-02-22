@@ -38,7 +38,9 @@ The tool can read a given excel spreadsheet with three columns(Year, Lecturer
 and Title) and create the Zatman html from it.
 
 Given for example:
+
 ![Table use](./examples/table_example.png)
 
 The result will look like this.
-![Zatman use]("./examples/zatman lecture result.png")
+
+![Zatman use](./examples/zatman lecture result.png)
