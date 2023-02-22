@@ -7,6 +7,11 @@ To use the tool run
 python GUI.png
 ```
 
+Alternatively, the dist folder contains a zip archive with a compiled
+.exe version of the Zatman updater.
+
+It was created by the pyinstaller command below.
+
 # Dependencies
 Uses
 - tkinter
