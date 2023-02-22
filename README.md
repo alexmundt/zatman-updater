@@ -43,4 +43,4 @@ Given for example:
 
 The result will look like this.
 
-![Zatman use](./examples/zatman lecture result.png)
+![Zatman use](./examples/zatman_lecture_result.png)
