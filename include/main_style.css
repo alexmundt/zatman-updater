@@ -1,0 +1,953 @@
+body{
+    background-color: #E0FFD1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #efe4ce,#e3caab )
+    }
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.dialog h2 {
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #132b10;
+    letter-spacing: 1px;
+    float: center;
+    color: #4fb142;
+}
+
+.dialog h3 {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #132b10;
+    letter-spacing: 0px;
+    float: center;
+    color: #4fb142;
+}
+
+.dialog h4 {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #132b10;
+    letter-spacing: 0px;
+    float: center;
+    color: #439638;
+}
+
+.dialog tr:hover {
+    background-color: inherit;
+    color: inherit;
+    }
+
+.dialog .toc {
+    background-color: #f2d8bd;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.dialog .toc a {
+    text-decoration: none;
+}
+
+.dialog .toc a:hover {
+    text-decoration: underline;
+}
+
+.dialoglink {
+  background-color: #d99b50;
+  color: black;
+  padding: 11px 25px;
+  margin: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dialoglink:hover {
+    box-shadow: 0px 0px 4px 4px;
+    box-shadow: white;
+    color: white;
+}
+
+.meetinglink {
+    margin-left:30%;
+    margin-right:30%;
+    width:50%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: normal;
+    /*border: 1px solid;*/
+    text-decoration: none;
+    background-color: #f5bc67;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 0px 3px;
+}
+.meetinglink:hover {
+    background-color: #4fb142;
+    color: white;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+th {
+  background-color: #a3661a;
+  color: white;
+}
+
+tr:hover {
+    background-color: #d99b4e;
+    color: white;
+    }
+
+
+#nextmeeting_table {
+    background-color: #edc89a;
+    box-shadow: 0px 0px 15px #a67130;
+    border-style: groove;
+    border: 2px groove brown;
+    margin:20px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 12%;
+    margin-right:12%;
+    width:76%;
+
+}
+
+#nextmeeting_table:hover {
+    background-color: #edc89a;
+    box-shadow: 0px 0px 15px #6e4719;
+
+    }
+
+#nextmeeting_table td:hover {
+    background-color: #edc89a;
+color:black;}
+
+#nextmeeting_table a {
+    text-align: center;
+    color:black;
+    padding: 14px 25px;
+
+    text-decoration: none;
+    background-color: #f7db8d;
+    border: 3px groove black;
+    border-radius: 4px;
+}
+
+#nextmeeting_table a:hover {
+    background-color: #665a3a;
+    color:white;
+    border-style: inset;
+}
+
+#zatman_table td {
+    padding: 10px;
+}
+
+
+
+#activities_table  td {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+#activities_table {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#activities_table a {
+    margin:2px;
+    padding: 8px 18px;
+    font-weight: normal;
+    /*border: 1px solid;*/
+    text-decoration: none;
+    background-color: #f5bc67;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 0px 3px;
+}
+#activities_table a:hover {
+    background-color: #4fb142;
+    color: white;
+}
+
+#executive_table {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#executive_table td {
+    padding: 3px;
+}
+
+#symposia_table {
+    width: 100%;
+}
+
+#dialogtable tr:hover{
+    background-color: inherit;
+    }
+
+.doornbos_table td {
+    padding: 7px;
+}
+.first_doornbos_table {
+    width: 100%;
+}
+.first_doornbos_table td {
+    text-align: center;
+    padding: 5px;
+}
+
+.symposia_year {
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #9c6f38;
+    color:black;
+    font-weight: normal;
+    border-radius: 15px;
+    font-size: 22px;
+}
+
+.symposia_title {
+    text-align: center;
+    padding: 6px;
+    color:black;
+    font-weight: bold;
+    background-color: #cfa263;
+    border-radius: 15px;
+}
+
+.doornbos_year {
+    text-align: center;
+    background-color: #9c6f38;
+    color:black;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+#banner {
+    position: absolute;
+    top: -7px;
+    background-image:url('../images/rockback.jpg');
+    z-index: 10;
+    background-position: top;
+    /*background-repeat: repeat-x;  repeats only in x-direction, standard
+     repeat is in both x- and y-direction*/
+    /*background-color: white;*/
+    width: 100%;
+    height: 170px;
+}
+
+#banner_img {
+    top: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+#banner_bottom {
+    background-image: linear-gradient(to right, #efe4ce, #e3caab
+     ) ;
+    z-index:18;
+    height: 40px;
+}
+
+
+#banner_title{
+    position: absolute;
+    top: 0px;
+    left: 37%;
+    color: #b45c2c;
+    text-align: center;
+}
+
+#banner_title title1{
+    font-size: 72px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #52250c;/*#823b14;*/
+    letter-spacing: 18px;
+    margin-left: 10%;
+    width:80%;
+    margin-right: 10%;
+    /*color: #d96638;*/
+    /*color: #b4462c;*/
+
+
+}
+
+ #banner_title title2{
+    font-weight: bold;
+    font-size: 19px;
+    text-shadow: 1px 1px 1px #5c290e;
+    color: #b46b2c;
+    z-index: 5;
+}
+
+
+#menu {
+    /*position: absolute;
+    top: 220px;
+    left: 2%;
+    width: 18%;*/
+    position: absolute;
+    top: 220px;
+    left: 2%;
+    width: 12%;
+    border-color: blue;
+    z-index:5;
+    /*width:100px;*/
+    font-size: 1em;
+}
+
+#logo {
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 1%;
+    z-index: 50;
+    margin: 5px;
+
+}
+
+#sedilogo {
+    position: absolute;
+    left:85%;
+    top:10px;
+    z-index: 50;
+
+    border-width: 10px;
+}
+
+
+#content {
+    position: absolute;
+    top: 210px;
+    left: 22%;
+
+
+    z-index:5;
+    background-image: linear-gradient(to right bottom, #f0c999 2%, #edb877 65%);
+    width: 71%;
+    padding: 15px;
+    box-shadow: 2px 2px 3px 3px;
+}
+
+#content c_header {
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #132b10;
+    letter-spacing: 0px;
+    float: center;
+    color: #4fb142;
+    margin:10px;
+    }
+
+#side_ul {
+
+    /*box-shadow: 1px 1px 2px 2px;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+#side_ul li {
+    background-color: #ebc57a;
+    text-align: center;
+    margin-bottom: 18px;
+    /* color of previous border  #b89858 */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    min-width: 140px;
+}
+
+#side_ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: #b89858;
+
+}
+
+#side_ul li a.active {
+    background-color: #2e1d6d;
+    border-color: #5d39e3;
+    color: white;
+    /* blue color of logo:  #2e1d6d;
+       green color of logo: #4fb142
+       grey hover color: #555
+       brown color: #ebc57a*/
+}
+
+#side_ul li a:hover:not(.active) {
+    background-color: #4fb142;
+    color: white;
+}
+
+
+
+#normal_list {
+    list-style-type: circle;
+    margin:15px;
+    padding: 5px;
+    background-color: #4CAF50;
+}
+
+.conduct_item {
+    padding: 5px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #d4ccb4;
+    background-color: #edcc8e;
+    font-weight: bold;
+    color: #4CAF50;
+    color: #3e8a41;
+    color: #355e36;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.conduct_item:hover {
+    color: white;
+    background-color:#8a7651;
+}
+.conduct_list {
+    list-style-type: circle;
+    margin:15px;
+    padding: 5px;
+    background-color: #c2a788;
+    background-color: #d9aa6c;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+
+
+.non_sticky_banner {
+    width: 100%;
+}
+
+
+#vertical_menu {
+    top: 0px;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+}
+
+
+#vertical_ul li a:hover:not(.active) {
+
+    background-color: #b45c2c;
+    color: white;
+    /*border-style: inset;
+    border-color: #cca85e;*/
+}
+
+#vertical_ul li a.active {
+    background-color: #e0b867;
+    color: black;
+    font-weight:bold;
+}
+
+#vertical_ul li .topactive {
+    background-color:#e0b867;
+    color: black;
+    font-weight:bold;
+}
+
+
+#vertical_ul {
+    top: 0%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    z-index: 80;
+    /*background-color: #f0e4cc; #ebc57a;*/
+    box-shadow: 0px 3px 2px;
+    /*border-left: 1px solid ;
+    border-top: 1px solid;
+    border-bottom: 1px solid;*/
+    }
+
+.vertical_li{
+    background-image: linear-gradient(to right,
+        #ecd1b4, #f0e4cc, #f0e4cc, #f0e4cc,#f0e4cc,#f0e4cc, #ecd1b4);
+    float: left;
+    text-align: center;
+    /*border-right: 1px solid;
+    */
+    border-bottom: none;
+    font-weight: bold;
+    width: 25%;
+}
+
+.vertical_li a {
+    /*border-style: outset;*/
+    border-color: #cca85e;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 11px 16px;
+
+    /*border: 1px solid;*/
+    text-decoration:none;
+
+
+
+}
+
+.body_left {
+    position: fixed;#
+    left: 0%;
+    top: 0;
+    bottom: 0;
+    margin:0px;
+    padding:0px;
+    background-color: white;
+    z-index:20;
+}
+.body_right {
+    position: fixed;
+    right: 0%;
+    top: 0;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background-image: linear-gradient(to bottom, white, white);
+    z-index:20;
+}
+
+.body_main {
+    position: absolute;
+}
+
+
+
+/* CSS Description for papers page */
+#paperInput {
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 6px 6px 6px 6px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  background-color: #ffe4c2;
+  border-style: inset;
+  border-width: 2px;
+  box-shadow: 2px 2px 3px 3px #dbaa6b;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+#paperTable th {
+    cursor: pointer
+}
+
+#paperTable {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#paperTable th, td{
+    padding: 5px 20px 5px 20px;
+}
+
+
+/* CSS Description of Job page*/
+.job-box {
+    border-style:solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px;
+    margin: 10px;
+    background-color:#d1eeaa
+    /* old colors: #c9ac93; #b5e477 */
+}
+
+.job-title {
+    padding: 5px;
+    /*background-color: #f5d8b5;*/
+    background-color: #85cc29;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.job-title:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.job-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.job-description span {
+    margin: 3px;
+
+    font-weight:bold;
+}
+
+.job-description .contact {
+    float:left;
+
+}
+
+.job-description .location {
+    float:right;
+}
+
+.job-description .job-text {
+    margin: 10px;
+}
+@media only screen and (min-width: 1408px) {
+  /* For desktop: */
+  .body_left_width {
+      width: 13%;
+  }
+  .body_right_width {
+      width: 23%;
+  }
+
+  .body_main_width {
+      width:64%;
+      left: 13%;
+  }
+
+  .sticky_banner {
+      position: fixed;
+      top:0;
+      width: 64%;
+  }
+}
+
+@media only screen and (max-width: 1407px) and (min-width: 1102px) {
+  /* For desktop: */
+  .body_left_width {
+      width: 6%;
+  }
+  .body_right_width {
+      width: 12%;
+  }
+
+  .body_main_width {
+      width:82%;
+      left: 6%;
+  }
+
+  .sticky_banner {
+      position: fixed;
+      top:0;
+      width: 82%;
+  }
+}
+
+
+@media only screen and (max-width: 1101px) and (min-width: 907px) {
+  /* For desktop: */
+  .body_left_width {
+      width: 0%;
+  }
+  .body_right_width {
+      width: 0%;
+  }
+
+  .body_main_width {
+      width:100%;
+      left: 0%;
+  }
+
+  .sticky_banner {
+      position: fixed;
+      top:0;
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 906px) and (min-width: 691px) {
+    .vertical_li a {
+        min-height: 45px;
+        padding-top: 4px;
+        padding-bottom: 1px;
+
+    }
+
+    #banner_title{
+        left: 30%;
+    }
+
+    .body_left_width {
+        width: 0%;
+    }
+    .body_right_width {
+        width: 0%;
+    }
+
+    .body_main_width {
+        width:100%;
+        left: 0%;
+    }
+
+    .sticky_banner {
+        position: fixed;
+        top:0;
+        width: 100%;
+    }
+
+    #content {
+        left:25%;
+        top: 220px;
+    }
+
+    #sedilogo {
+        left: 81%;
+    }
+}
+
+@media only screen and (max-width:690px) and (min-width:557px) {
+     .vertical_li{
+        float:center;
+        width: 100%;
+    }
+
+    #banner_title{
+        left: 25%;
+    }
+
+    #side_ul li a {
+        padding: 9px 0px;
+
+    }
+
+    #side_ul li {
+        min-width: 120px;
+    }
+
+    .vertical_li a {
+        padding:3px 0px;
+    }
+
+
+    .body_left_width {
+        width: 0%;
+    }
+    .body_right_width {
+        width: 0%;
+    }
+
+    .body_main_width {
+        width:100%;
+        left: 0%;
+    }
+
+    .sticky_banner {
+        position: fixed;
+        top:0;
+        width: 100%;
+    }
+
+    #content {
+        top: 275px;
+        left: 30%;
+        width: 68%;
+    }
+
+    #menu {
+        top: 390px;
+    }
+
+    #sedilogo {
+        top:260px;
+        left:1%;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 556px) and (min-width: 446px)
+{
+    .vertical_li{
+       float:center;
+       width: 100%;
+   }
+
+   #banner_title{
+       left:22%
+
+   }
+
+   #banner_title title1{
+       font-size: 62px;
+   }
+
+    #banner_title title2{
+       font-size: 14px;
+   }
+
+   #logo {
+       top:260px;
+       z-index: 10;
+   }
+
+   #sedilogo {
+       top:260px;
+       left:50%;
+       z-index: 10;
+   }
+   #side_ul li a {
+       padding: 9px 0px;
+
+   }
+
+   #side_ul li {
+      width: 80%;
+   }
+
+   .vertical_li a {
+       padding:3px 0px;
+   }
+
+
+   .body_left_width {
+       width: 0%;
+   }
+   .body_right_width {
+       width: 0%;
+   }
+
+   .body_main_width {
+       width:100%;
+       left: 0%;
+   }
+
+   .sticky_banner {
+       position: fixed;
+       top:0;
+
+   }
+
+   #content {
+       top: 850px;
+       left: 2%;
+       width: 96%;
+   }
+
+   #menu {
+       top: 400px;
+       width: 100%;
+       left: 10%;
+   }
+}
+
+@media screen and (max-width: 445px)
+{
+    .vertical_li{
+       float:center;
+       width: 100%;
+   }
+
+   #banner_title{
+       left:6%
+
+   }
+
+   #banner_title title1{
+       font-size: 62px;
+   }
+
+    #banner_title title2{
+       font-size: 14px;
+   }
+
+   #logo {
+       top:260px;
+       z-index: 10;
+   }
+
+   #sedilogo {
+       top:260px;
+       left:50%;
+       z-index: 10;
+   }
+   #side_ul li a {
+       padding: 9px 0px;
+
+   }
+
+   #side_ul li {
+      width: 80%;
+   }
+
+   .vertical_li a {
+       padding:3px 0px;
+   }
+
+
+   .body_left_width {
+       width: 0%;
+   }
+   .body_right_width {
+       width: 0%;
+   }
+
+   .body_main_width {
+       width:100%;
+       left: 0%;
+   }
+
+   .sticky_banner {
+       position: fixed;
+       top:0;
+
+   }
+
+   #content {
+       top: 910px;
+       left: 2%;
+       width: 96%;
+   }
+
+   #menu {
+       top: 400px;
+       width: 100%;
+       left: 10%;
+   }
+}
+
+
+<style type="text/css">
+
+</style>
