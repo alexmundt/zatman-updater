@@ -23,6 +23,8 @@ from the standard library.
 Also uses
 - pandas
 
+The python distribution Anaconda comes with all dependencies installed.
+
 # Compilation instructions
 Can be compiled to exe with the following pyinstaller command.
 ```
