@@ -30,15 +30,6 @@ class StructureGenerator(Generator):
         lecturer = self.__sanitize_pandas_readout(lecturer)
         title = self.__sanitize_pandas_readout(title)
 
-        """
-    <tr>
-        <td>2022</td>
-        <td>L. Cobden</td>
-        <td>Locating the iron spin transition in the lower mantle with
-global adjoint tomography</td>
-    </tr>
-        """
-
         row_html = f'<tr><td>{year}</td> <td>{lecturer}</td> <td>{title}</td></tr>'
 
         return row_html
