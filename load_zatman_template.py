@@ -121,20 +121,4 @@ was tragically cut short. </p>
 </html>
 
 """
-# insert tag {text} after first <tr> tag
-
     return string
-
-
-# print(load_doornbos_template("hello"))
-
-
-# generic table row
-"""
-    <tr>
-        <td>2022</td>
-        <td>L. Cobden</td>
-        <td>Locating the iron spin transition in the lower mantle with
-global adjoint tomography</td>
-    </tr>
-"""
