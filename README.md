@@ -21,5 +21,7 @@ Also uses
 # Compilation instructions
 Can be compiled to exe with the following pyinstaller command.
 ```
-# added later
+pyinstaller -i "gui.ico" --noconsole --onefile --add-data "gui.png;." GUI.py
 ```
+## Note:
+- [ ] upload "gui.ico" from the distributabe folder
