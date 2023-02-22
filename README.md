@@ -28,3 +28,6 @@ Can be compiled to exe with the following pyinstaller command.
 ```
 pyinstaller -i "gui.ico" --noconsole --onefile --add-data "gui.png;." GUI.py
 ```
+
+# Use example on Linux
+![Example use](./tool_example.png)
